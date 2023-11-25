@@ -104,16 +104,15 @@
             }
         });
 
-        var greenIcon = new LeafIcon({ iconUrl: 'Marker/leaf-green.png' });
+        // var greenIcon = new LeafIcon({ iconUrl: 'Marker/leaf-green.png' });
 
-        L.marker([30.354086618820002, 30.9578856290658], { icon: greenIcon }).addTo(map)
-            .bindPopup("<b>Hello world!</b><br />I am a popup in EGYPT <br /> <img src='Marker/leaf-green.png' />.").openPopup();
+        // L.marker([30.354086618820002, 30.9578856290658], { icon: greenIcon }).addTo(map)
+        //     .bindPopup("<b>Hello world!</b><br />I am a popup in EGYPT <br /> <img src='Marker/leaf-green.png' />.").openPopup();
 
 
 
         var LeafIcon_2 = L.Icon.extend({
             options: {
-                
                 iconSize: [50, 82],
                 shadowSize: [50, 64],
                 iconAnchor: [22, 94],
@@ -123,11 +122,11 @@
         });
 
 
-        
         var markers_icon = new LeafIcon_2 ({ iconUrl: 'Marker/marker-icon-2x.png' });
 
-        L.marker([-26.64991293944776, 153.06281312253793], { icon: markers_icon }).addTo(map)
-            .bindPopup("<b>Hello world !</b><br />I am a popup in AUST.").openPopup();
+
+        L.marker([51.46722196728517, -112.70659816193884], { icon: markers_icon }).addTo(map)
+             .bindPopup("<b>This is where the comp is!</b>.").openPopup();
 
         //        var icon = L.Icon.Label.extend({
         //    options: {
@@ -157,7 +156,7 @@
         //map.on('locationerror', onLocationError);
 
         //map.locate({ setView: true, maxZoom: 13 });
-        
+
     </script>
 </body>
 </html>
